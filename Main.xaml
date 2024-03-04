@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="1102,2491" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="1102,2620" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -100,13 +100,9 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1112,2426" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1112,2555" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="EmployeeName">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">Brad M Roberts</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="Brad M Roberts" Name="EmployeeName" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -114,19 +110,20 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Log In" sap:VirtualizedContainerService.HintSize="1050,2338" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Always" ScopeGuid="b121e93a-5483-4c84-9b9c-e1296cad1d2b" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Log In" sap:VirtualizedContainerService.HintSize="1050,2467" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Always" ScopeGuid="b121e93a-5483-4c84-9b9c-e1296cad1d2b" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,2098" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,2227" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="954,125" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Changes are being made&quot;]" />
             <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,258" sap2010:WorkflowViewState.IdRef="NTypeInto_4" Text="P.mehra@latrobe.edu.au" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/login" ContentHash="I89FwaZt00Sa7C7AoyQyDA" CvElementArea="346, 476, 489, 38" CvType="InputBox" DesignTimeRectangle="348, 478, 485, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='email' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='email' tag='INPUT' type='email' class='form-control ' aaname='Email:' /&gt;" Guid="4ba1aca9-7046-4f11-a075-ce97f4ebd1b4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAekAAAAmCAYAAADgB2NCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANFSURBVHhe7d1LTttgGEbhf5NsoQP2wloqMeugnTBhBW2EUqkQIdQk5GIIwfHlq4+JAamTQtvYg/NIr4jAZHpkY4e0Leq4y6tYb6tYPFQxvS/jJiviOitjsi7ialXE5bJZ8/VH87XdYuecc865t2zfUHpKV+krnaW3dJf+0mF6TJfpc+LFqvnGfFO1B/ELvMn4dhcX812MZnmzXXyb5u2+Ouecc+5d61pKV+krnaW3dJf+0mF6TJfpc6LYT4Eu43yyjZOzZRyfTuPDx5/OOeecO8DoLv2lw/SYLtPnxKk15eYHHPRptIqb2SIWC+ecc84dYnSX/tLhp1AX7aXvxDVwTrEpOAdkWRZ5nkdVVc4555w7wOgu/aXD9Jgu0+dErbkWTr1nyyzKsoy6rkOSJB0G3aW/dJge02X6nLirjD9ac0388fHRQEuS1AP6S4fpMV2mz4lTau4u45ucckuSpH7QYXpMl+lz4jktbgM30pIk9auLNF2mz4kHqnley0hLktSvl0jv2g88SXzyCQ9WG2lJkvrVRZou0+fEHWTvjfTR0dH+lSRJ+luvI02fE58nykeVGWlJkvrVRZou02cjLUnSQBhpSZIGykhLkjRQRlqSpIEy0pIkDZSRliRpoIy0JEkDZaQlSRooIy1J0kAZaUmSBspIS5I0UEZakqSBMtKSJA3U75H2X1VKkjQIXaSf/1Ul/1T6vZGWJEn/zutI0+d02ZR6NNsZaUmSetZFmi7T53TVlHo080xakqS+vUQ6D/qcJusiLuaeSUuS1Lcu0nSZPqfrrIzxrZGWJKlvXaTpMn1ON1nR3kF2fDqNTV7uD5MkSYdGh+kxXabPaXpftqfUJ2fL+Dy+j7qu94dKkqRDob90mB7TZfqcFg9VW+vzybat95fvm9gWhlqSpEOhu/SXDtNjukyf03pbxXxDqMv2BxScg7gm7pxzzrn/P7pLf58CXbZdps/pLq9i9Rzqoj3F5lo4f7Tm7jJuA+d5LR6sZnxUmXPOOefevq6ldJW+0ll6S3fpLx2mx3SZPidOsXlBsTm15ho4B3FXGb/Ac1o8UM0nn/Am7RbNGzrnnHPuz7dvKD2lq/SVztJbukt/6TA9psvboo5ftfDSNNYH1moAAAAASUVORK5CYII=" InformativeScreenshot="2f713f5ca3efe535c92d97db38f302f3.png" IsResponsive="True" Reference="RvFosCLagkqcziUJYBSUaw/O_Wbvr81M0Kj1ibNqoPohA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
@@ -169,9 +166,9 @@
                 <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/employees" ContentHash="mNkypyHXcESGWvV8S8NPNw" DesignTimeRectangle="1055, 250, 24, 25" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='openModalRefresh' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='openModalRefresh' tag='A' type='' class='close' aaname='X' check:innerText='X' /&gt;" Guid="c197473c-a6db-4ff2-b4e6-59adc5b607bd" InformativeScreenshot="cc1e851387aa482e9e8cd806ca2eadc3.png" Reference="RvFosCLagkqcziUJYBSUaw/ZaLQd7cDcU67CYHuiLyeYg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Employees' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NCheckState DisplayName="Check App State 'EmployeeDetails'" sap:VirtualizedContainerService.HintSize="954,707" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="b121e93a-5483-4c84-9b9c-e1296cad1d2b" Version="V3">
+            <uix:NCheckState DisplayName="Check App State 'EmployeeDetails'" sap:VirtualizedContainerService.HintSize="954,711" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="b121e93a-5483-4c84-9b9c-e1296cad1d2b" Version="V3">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,467" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,469" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
