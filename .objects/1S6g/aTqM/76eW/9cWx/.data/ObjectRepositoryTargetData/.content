@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="vYHNkU40I0a2OIw4RKqdmw" Reference="RvFosCLagkqcziUJYBSUaw/9cWxJBbpFE-7Zx_PP62uGw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://acme-test.uipath.com/employees" CvElementArea="705, 373, 45, 36" CvType="Icon" DesignTimeRectangle="708, 374, 39, 35" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='I' type='' class='far fa-address-card card' aaname='' /&gt;" Guid="cf5e5067-23b6-4465-8e0c-e7f40da767f2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACsAAAAnCAYAAACWn7G7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAINSURBVFhH7ZYxa9tAGIb7n7zcYDAUb13sJYLSMYVqigrJ1E2L8WCypCA0RHTRpA7eXHAWo1JQoKiLhoAoHHgQBv2FN0eik8/OyanUU0+hHp7l7r3Tw/Hdp3uV5zleCkfZtnjBshuKeHWDm2UHWMWgG8GNsZVNAlive+j1OkTfhPcz25dN4L2ThLvAyEW8I3vnwywDBMMTA8ZbnYwxKH1M+HeVsttJfYSYHGVbQaXsOsHCucBpUWPWNEBEJbnGqJJN5vg04lkB1mb8RJJvhBLZFP4HnpMwukK018gfyCIElzPMDuB+S4U1KmR/eTDKnAyC2XfJup39K5iGwhoVsqtJkanG+iqeUMEmRei70hN9xEUg/Kn0nmxtdNYsI/0heawIRKmYVyLLaNINtNQsp26fpQvYRbaK0+tYWKNStnX+J1l6G2ByZmDMHuiDkQXb8bEoLkfwxYZ1MgTpD2Gc2fCWe+2Lsjrv8/3ljB1FZZD4Jkg5/ycQGJchMr5HGgj7V6Dkgt1eYVzO1YHAXm4bffabgh4iE77ZVDa+NorxBuycVh0ayoZTPt6Afy0bfX5TjNeHsLrl+9Sjac2uYwSO7PHxDM7fPMibymrhKNsWh2TZH+ainOwaJoLi+fgom1PMz4kkqB9yPgd9cCxlGezWex8H0gW6GLx3Ea0Lvx1ZzlryK9SBIMl5KtthjrLtkOMerEbZxODkVC0AAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Employees' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvTextArea="767, 379, 176, 23" CvTextArgument="[EmployeeName]" CvType="Text" DesignTimeRectangle="766, 379, 177, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl class='name' tag='DIV' /&gt;" ImageBase64="" SearchSteps="CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="dc9b6c4cfbb74b002e02962464c10ccd.png" xmlns="">0XpU3k40Eg06pUvNjFJzYwQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="&quot;Brad M Roberts&quot;" Name="EmployeeName" />
+    </scg:List>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

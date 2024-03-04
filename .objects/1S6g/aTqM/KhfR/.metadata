@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome: ACME System 1 - Log out",
+  "Type": "Screen",
+  "Id": "KhfRCzvlYE6ZMgMNgj1cnQ",
+  "Reference": "RvFosCLagkqcziUJYBSUaw/KhfRCzvlYE6ZMgMNgj1cnQ",
+  "ParentRef": "RvFosCLagkqcziUJYBSUaw/aTqMuQfKQk69rMYx-VOp1w",
+  "Created": "2024-03-03T12:26:11.2527277Z",
+  "Updated": "2024-03-03T12:26:11.2527277Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
